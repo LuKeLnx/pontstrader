@@ -82,16 +82,17 @@
     --- END ---
   ```
 
-#### 8. Running the script for the first time allows you to setup a few things
+#### 8. Edit config.ini and add your configuration
   ###### - Bittrex API
   Because you are trading with pontstrader you will have to provide the Bittrex API key and secret during the installation wizard, you can create a key+secret via https://bittrex.com/Manage#sectionApi
   For most of the functions the "Read Info" and "Trade Limit" sliders need to be enabled, if you would like to Withdraw with pontstrader please enable the "Withdraw" slider. In the future we will allow market trading, from that moment the 3th slider should be on as well.
   If you enable Withdraw, make sure to add a IP whitelist for this key which will disallow others to withdraw through your API keys should they ever get known by 3th party. (pontstrader will not send or store your keys anywhere)
+
+  ##### - Subscription key
+  Since version 3.2 pontstrader can be found on Github, therefore the code is public which made me remove the subscription key from the code and added it to the wizard everybody will have to go through starting the script for the first time, this disallows people from using the script without paying 10 dollars for it.
+  If you need the password, please contact p0nts on telegram!
   
   ###### - Pushover / Pushbullet
   Since version 2.0 you are able to retrieve pushover or pushbullet messages on your phone uppon changes in certain 24/7 running functions. You can either configure or skip if you dont want.
   More information on: https://www.pushover.com or https://www.pushbullet.com (I would recomment pushover over pushbullet, but it costs a little money so make your own choice)
 
-  ##### - Redis password
-  Since version 3.2 pontstrader can be found on Github, therefore the code is public which made me remove the password from the code and added it to the wizard everybody will have to go through starting the script for the first time, this disallows people from using the script without paying 10 dollars for it.
-  If you need the password, please contact p0nts on telegram!
