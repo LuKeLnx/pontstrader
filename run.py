@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys, os, signal, time
+import sys, os, signal, time, threading
 from functions import *
 from ConfigParser import SafeConfigParser
 
@@ -171,6 +171,41 @@ def back():
 
 # Exit program
 def exit():
+  count = threading.activeCount()
+  if count > 1:
+    threads = threading.enumerate()
+    thread_counter = 0
+    for t in threading.enumerate():
+      if 'arbitrage' in t.name:
+        pass
+      elif 'Main' in t.name:
+        pass
+      else:
+        thread_counter += 1
+    if thread_counter > 0:
+      yellow('WARNING: There are currently {0} active trade(s), are you sure you want to exit?'.format(thread_counter))
+      green('1. yes')
+      red('2. no')
+      try:
+        yes_no = raw_input(Fore.WHITE+'Enter your choice [1-2] : ')
+        yes_no = int(yes_no)
+      except:
+        white('Invalid number... going back to Main Menu')
+        menu_actions['main_menu']()
+      if yes_no == 1:
+        white('Exiting...')
+        sys.exit()
+      elif yes_no == 2:
+        white('Ok... going back to Main Menu')
+        menu_actions['main_menu']()
+      else:
+        white('Invalid number... going back to Main Menu')
+        menu_actions['main_menu']()
+    else:
+      white('Exiting...')
+      sys.exit()
+  else:
+    white('Exiting...')
     sys.exit()
 
 # Menu definition
