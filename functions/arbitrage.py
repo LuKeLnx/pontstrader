@@ -450,7 +450,7 @@ def arbitrage(redis_password):
     yellow('1. BTC')
     yellow('2. ETH')
     yellow('3. USDT')
-    yellow('4. All')
+    green('4. All')
     red('5. Exit to Main Menu')
     try:
       market = raw_input(Fore.WHITE+'Enter your choice [1-5] : ')

@@ -6,7 +6,6 @@ def buy(key, secret, redis_password):
   from pprint import pprint
   from time import gmtime, strftime
   from bittrex import bittrex
-  from menu import menu
   from colors import white, red, green, yellow
   from colorama import Fore, Back, Style, init
   init()
