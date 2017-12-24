@@ -98,6 +98,7 @@
 
 
   ##### - Example:
+  ```
   [bittrex]
   key = e2b2a2f46431440f903
   secret = e6ddff99a2444
@@ -111,3 +112,4 @@
 
   [pushbullet]
   token = disabled
+  ```
