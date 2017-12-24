@@ -17,11 +17,10 @@ def withdraw(key, secret):
     except:
       white('Bittrex API error: {0}'.format(api))
   
-    white((30 * '-'))
-    green('   W I T H D R A W')
-    white((30 * '-'))
+    white((19 * '-'))
+    green('  W I T H D R A W')
+    white((19 * '-'))
     yellow('NOTE: Make sure Withdraw is allowed for this API key')
-    white((30 * '-'))
     try:
       balances = api.getbalances()
       green('Currency\tAvailable')

@@ -65,9 +65,9 @@ def watch(key, secret, redis_password):
   if __name__ == "watch":
     proceed = False
     while True:
-      white((30 * '-'))
-      green('   W A T C H')
-      white((30 * '-'))
+      white((13 * '-'))
+      green('  W A T C H')
+      white((13 * '-'))
       white('Market?')
       yellow('1. BTC')
       yellow('2. ETH')

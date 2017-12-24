@@ -17,9 +17,9 @@ def deposit(key, secret):
       time.sleep(1)
       break
 
-    white((30 * '-'))
-    green('   D E P O S I T')
-    white((30 * '-'))
+    white((17 * '-'))
+    green('  D E P O S I T')
+    white((17 * '-'))
     try:
       currency = raw_input(Fore.WHITE+'Currency? (e.g. LTC / NEO / OMG) : ').upper()
     except:
@@ -32,8 +32,8 @@ def deposit(key, secret):
         address = apicall['Address']
         red('WARNING! Bittrex API is crap and does not provide proper addresses on coins that require additional settings such as a tag (XRP) or paymentid (NXT)')
         green('{0} deposit address: {1}'.format(currency, address))
-        yellow('Returning to Main Menu in 5 seconds...')
-        time.sleep(5)
+        yellow('Returning to Main Menu in 10 seconds...')
+        time.sleep(10)
         break
       except:
         white('Unable to retrieve data from Bittrex... returning to Main Menu')

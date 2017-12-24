@@ -37,9 +37,9 @@ def trailing(key, secret, pushover_user, pushover_app, pushbullet_token, redis_p
   else:
     pass
   
-  white((40 * '-'))
-  green('   T R A I L I N G  S T O P  L O S S')
-  white((40 * '-'))
+  white((37 * '-'))
+  green('  T R A I L I N G  S T O P  L O S S')
+  white((37 * '-'))
   while True:
     status_update = False
     gobuy = False

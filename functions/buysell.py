@@ -30,9 +30,9 @@ def buysell(key, secret, redis_password):
       time.sleep(2)
       break
   
-    white((30 * '-'))
-    green('   B U Y  A N D  S E L L')
-    white((30 * '-'))
+    white((25 * '-'))
+    green('  B U Y  A N D  S E L L')
+    white((25 * '-'))
     white('Market?')
     yellow('1. BTC')
     yellow('2. ETH')

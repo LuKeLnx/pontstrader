@@ -30,16 +30,16 @@ def buy(key, secret, redis_password):
       time.sleep(2)
       break
 
-    white((30 * '-'))
-    green('   B U Y  O R D E R')
-    white((30 * '-'))
+    white((9 * '-'))
+    green('  B U Y')
+    white((9 * '-'))
     white('Market?')
     yellow('1. BTC')
     yellow('2. ETH')
     yellow('3. USDT')
     red('4. Back to Main Menu')
     try:
-      trade = raw_input(Fore.WHITE+'Enter your choice [1-4] : ')
+      trade = raw_input(Fore.WHITE+'Enter your choice [1-4] :  ')
       trade = int(trade)
     except:
       white('\nInvalid number... going back to Main Menu')

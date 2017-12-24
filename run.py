@@ -36,9 +36,9 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    white((30 * '-'))
-    green('P O N T S T R A D E R . C O M')
-    white((30 * '-'))
+    white((25 * '-'))
+    green('  P O N T S T R A D E R  ')
+    white((25 * '-'))
     yellow('1. Buy')
     yellow('2. Sell')
     yellow('3. Buy and Sell')

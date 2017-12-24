@@ -413,9 +413,9 @@ def arbitrage(redis_password):
           add_dict = {'market': coin, 'from': frm, 'to':to, 'ask': ask, 'bid': bid, 'percentage': percentage}
           sort_percentage.append(dict(add_dict))
   
-    white((30 * '-'))
-    green('   A R B I T R A G E')
-    white((30 * '-'))
+    white((21 * '-'))
+    green('  A R B I T R A G E')
+    white((21 * '-'))
     white('From what Exchange?')
     yellow('1. Bittrex')
     yellow('2. HitBTC')

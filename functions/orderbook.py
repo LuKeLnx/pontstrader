@@ -27,9 +27,9 @@ def orderbook(key, secret, redis_password):
   
     try:
       openorders = api.getopenorders(market='')
-      white((30 * '-'))
-      green('   O P E N  O R D E R S')
-      white((30 * '-'))
+      white((21 * '-'))
+      green('  O R D E R B O O K')
+      white((21 * '-'))
       if openorders:
         number = 0
         list = []

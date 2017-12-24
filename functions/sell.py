@@ -30,9 +30,9 @@ def sell(key, secret, redis_password):
       time.sleep(1)
       break
   
-    white((30 * '-'))
-    green('   S E L L  O R D E R')
-    white((30 * '-'))
+    white((11 * '-'))
+    green('  S E L L')
+    white((11 * '-'))
     try:
       balances = api.getbalances()
       green('Currency\tAvailable')

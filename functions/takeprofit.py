@@ -37,9 +37,9 @@ def takeprofit(key, secret, pushover_user, pushover_app, pushbullet_token, redis
   else:
     pass
   
-  white((25 * '-'))
-  green('   T A K E  P R O F I T')
-  white((25 * '-'))
+  white((24 * '-'))
+  green('  T A K E  P R O F I T')
+  white((24 * '-'))
   while True:
     status_update = False
     gobuy = False

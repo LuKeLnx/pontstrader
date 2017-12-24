@@ -25,9 +25,9 @@ def balances(key, secret, redis_password):
     except:
       white('Bittrex API error: {0}'.format(api))
   
-    white((30 * '-'))
-    green('   B A L A N C E S')
-    white((30 * '-'))
+    white((19 * '-'))
+    green('  B A L A N C E S')
+    white((19 * '-'))
     try:
       get_balances = api.getbalances()
       green('Currency\tBalance\t\t\tAvailable\t\tPending\t\tBTC Value')

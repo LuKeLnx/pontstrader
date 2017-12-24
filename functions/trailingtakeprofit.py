@@ -37,9 +37,9 @@ def trailingtakeprofit(key, secret, pushover_user, pushover_app, pushbullet_toke
   else:
     pass
   
-  white((40 * '-'))
-  green('   T R A I L I N G  T A K E  P R O F I T')
-  white((40 * '-'))
+  white((41 * '-'))
+  green('  T R A I L I N G  T A K E  P R O F I T')
+  white((41 * '-'))
   while True:
     status_update = False
     gobuy = False
