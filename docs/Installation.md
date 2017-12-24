@@ -96,3 +96,18 @@
   Since version 2.0 you are able to retrieve pushover or pushbullet messages on your phone uppon changes in certain 24/7 running functions. You can either configure or skip if you dont want.
   More information on: https://www.pushover.com or https://www.pushbullet.com (I would recomment pushover over pushbullet, but it costs a little money so make your own choice)
 
+
+  ##### - Example:
+  [bittrex]
+  key = e2b2a2f46431440f903
+  secret = e6ddff99a2444
+
+  [subscription]
+  key = ZhuLacYLjoudcoXzGQTLeYYMsxXRscN
+
+  [pushover]
+  user = uckX9EPLUbR3
+  app = a3x8khvv5bh3d
+
+  [pushbullet]
+  token = disabled
