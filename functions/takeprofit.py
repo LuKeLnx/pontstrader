@@ -373,6 +373,7 @@ def takeprofit(key, secret, pushover_user, pushover_app, pushbullet_token, redis
       while True:
         values = r.hmget(market, 'Ask')
         ask = float(values[0])
+        buyprice = float(ask)
         try:
           buy = api.buylimit(market, amount, ask)
         except:
@@ -412,7 +413,6 @@ def takeprofit(key, secret, pushover_user, pushover_app, pushbullet_token, redis
                   tp_messages[thread_name] = message
                   pass
                 time.sleep(10)
-              buyprice = float(ask)
               lastprice = 0
           while True:
             try:
