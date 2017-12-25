@@ -74,6 +74,7 @@ def exec_menu(choice):
 
 # Read config
 def read_config():
+  try:
     configfile = (os.path.dirname(os.path.realpath(__file__))) + '/config.ini'
     parser = SafeConfigParser()
     parser.read(configfile)
@@ -84,6 +85,7 @@ def read_config():
     pushover_app = str(parser.get('pushover', 'app'))
     pushbullet_token = str(parser.get('pushbullet', 'token'))
     return bittrex_key, bittrex_secret, subscription_key, pushover_user, pushover_app, pushbullet_token
+  except:
     print 'Unable to parse config.ini, make sure to read the manual first...exiting!'
     sys.exit()
 
@@ -230,7 +232,6 @@ menu_actions = {
 # Main Program
 if __name__ == "__main__":
     readconfig = read_config()
-    print readconfig
     bittrex_key = str(readconfig[0])
     bittrex_secret = str(readconfig[1])
     subscription_key = str(readconfig[2])
